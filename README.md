@@ -1,9 +1,10 @@
 # Energy-Through-Nuclear-Fusion
 <!DOCTYPE html>
-<head>
-<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-<title>Energy Through Nuclear Fusion</title>
-</head>
+<html>
+  <head>
+      <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+      <title>Energy Through Nuclear Fusion</title>
+  </head>
 <body>
   <title id= 1>Nuclear Fusion on the Sun</title>
     <p id= 1></p>
