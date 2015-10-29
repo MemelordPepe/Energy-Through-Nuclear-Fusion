@@ -26,7 +26,7 @@ if (x == 'n'){
 	elements['Mt'] = 109;elements['Ds'] = 110;elements['Rg'] = 111;elements['Cn'] = 112;elements['Uut'] = 113;elements['Fl'] = 114;
 	return elements
 }
-else {
+else if (x == 'm') {
 	var elementsN = new Array();
 	elementsN[1] = 'H';elementsN[2] = 'He';elementsN[3] = 'Li';elementsN[4] = 'Be';elementsN[5] = 'B';elementsN[6] = 'C';
 	elementsN[7] = 'N';elementsN[8] = 'O';elementsN[9] = 'F';elementsN[10] = 'Ne';elementsN[11] = 'Na';elementsN[12] = 'Mg';
@@ -46,8 +46,34 @@ else {
 	elementsN[91] = 'Pa';elementsN[92] = 'U';elementsN[93] = 'Np';elementsN[94] = 'Pu';elementsN[95] = 'Am';elementsN[96] = 'Cm';
 	elementsN[97] = 'Bk';elementsN[98] = 'Cf';elementsN[99] = 'Es';elementsN[100] = 'Fm';elementsN[101] = 'Md';elementsN[102] = 'No';
 	elementsN[103] = 'Lr';elementsN[104] = 'Rf';elementsN[105] = 'Db';elementsN[106] = 'Sg';elementsN[107] = 'Bh';elementsN[108] = 'Hs';
-	elementsN[109] = 'Mt';elementsN[110] = 'Ds';elementsN[111] = 'Rg';elementsN[112] = 'Cn';elementsN[113] = 'Uut';elementsN[114] = 'Fl';}
+	elementsN[109] = 'Mt';elementsN[110] = 'Ds';elementsN[111] = 'Rg';elementsN[112] = 'Cn';elementsN[113] = 'Uut';elementsN[114] = 'Fl';
 	return elementsN
+}
+else {
+	var elementsMemes = new Array();
+	elements['H'] = "Hydrogen";elements['He'] = "Heilum";elements['Li'] = "Lithium";elements['Be'] = "Beryllium";elements['B'] = "Boron";elements['C'] = "Carbon";
+	elements['N'] = "Nitrogen";elements['O'] = "Oxygen";elements['F'] = "Fluorine";elements['Ne'] = "Neon";elements['Na'] = "Sodium";elements['Mg'] = "Magnesium";
+	elements['Al'] = "Aluminium";elements['Si'] = "Silicon";elements['P'] = "Phosphorus";elements['S'] = "Sulfur";elements['Cl'] = "Chlorine";elements['Ar'] = "Argon";
+	elements['K'] = "Potassium";elements['Ca'] = "Calcium";elements['Sc'] = "Scandium";elements['Ti'] = "Titanium";elements['V'] = "Vanadium";elements['Cr'] = "Chromium";
+	elements['Mn'] = "Manganese";elements['Fe'] = "Iron";elements['Co'] = "Cobalt";elements['Ni'] = "Nickel";elements['Cu'] = "Copper";elements['Zn'] = "Zinc";
+	elements['Ga'] = "Gallium";elements['Ge'] = "Germanium";elements['As'] = "Arsenic";elements['Se'] = "Selenium";elements['Br'] = "Bromine";elements['Kr'] = "Krypton";
+	elements['Rb'] = "Rubidium";elements['Sr'] = "Strontium";elements['Y'] = "Yttrium";elements['Zr'] = "Zirconium";elements['Nb'] = "Niobium";elements['Mo'] = "Molybdenum";
+	elements['Tc'] = "Technetium";elements['Ru'] = "Ruthenium";elements['Rh'] = "Rhodium";elements['Pd'] = "Palladium";elements['Ag'] = "Silver";elements['Cd'] = "Cadmium";
+	elements['In'] = "Indium";elements['Sn'] = "Tin";elements['Sb'] = "Antimony";elements['Te'] = "Tellurium";elements['I'] = "Iodine";elements['Xe'] = "Xenon";
+	elements['Cs'] = "Caesium";elements['Ba'] = "Barium";elements['La'] = "Lanthanum";elements['Ce'] = "Cerium";elements['Pr'] = "Praseodymium";elements['Nd'] = "Neodymium";
+	elements['Pm'] = "Promethium";elements['Sm'] = "Samarium";elements['Eu'] = "Europium";elements['Gd'] = "Gadolinium";elements['Tb'] = "Terbium";elements['Dy'] = ;"Dysprosium"
+	elements['Ho'] = "Holmium";elements['Er'] = "Erbium";elements['Tm'] = "Thulium";elements['Yb'] = "Ytterbium";elements['Lu'] = "Lutetium";elements['Hf'] = "Hafnium";
+	elements['Ta'] = "Tantalum";elements['W'] = "Tungsten";elements['Re'] = "Rhenium";elements['Os'] = "Osmium";elements['Ir'] = "Irdium";elements['Pt'] = "Platinum";
+	elements['Au'] = "Gold";elements['Hg'] = "Mercury";elements['Tl'] = "Thallium";elements['Pb'] = "Lead";elements['Bi'] = "Bismuth";elements['Po'] = "Polonium";
+	elements['At'] = "Astatine";elements['Rn'] = "Radon";elements['Fr'] = "Francium";elements['Ra'] = "Radium";elements['Ac'] = "Actinium";elements['Th'] = "Thorium";
+	elements['Pa'] = "Protactinium";elements['U'] = "Uranium";elements['Np'] = "Neptunium";elements['Pu'] = "Plutonium";elements['Am'] = "Americium";elements['Cm'] = "Curium";
+	elements['Bk'] = "Berkelium";elements['Cf'] = "Californium";elements['Es'] = "Einsteinium";elements['Fm'] = "Fermium";elements['Md'] = "Mendelevium";elements['No'] = "Nobelium";
+	elements['Lr'] = "Lawrencium";elements['Rf'] = "Rutherfordium";elements['Db'] = "Dubnium";elements['Sg'] = "Seaborgium";elements['Bh'] = "Bohrium";elements['Hs'] = "Hassium";
+	elements['Mt'] = "Meitnerium";elements['Ds'] = "Darmstadtium";elements['Rg'] = "Roentgenium";elements['Cn'] = "Copernicium";elements['Uut'] = "Ununtrium";elements['Fl'] = "Flerovium";
+	return elements
+	
+}
+	
 }
 function CallRandomElement(x)
 {
@@ -55,8 +81,8 @@ function CallRandomElement(x)
 	alert(x[randominterger]);
 }
 CreatePeriodElmentDictionary();
-CallRandomElement(CreatePeriodElmentDictionary('a'));
-
+h = CallRandomElement(CreatePeriodElmentDictionary('m'));
+alert(CreatePeriodElmentDictionary('n')[h]);
 /* Ignore This For Now --->
 <!DOCTYPE html>
 <html>
