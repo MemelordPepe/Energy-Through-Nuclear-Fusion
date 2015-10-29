@@ -2,8 +2,8 @@
  * Code Made by: Jonny
  * On 10/28/15
  */
-function CreatePeriodElmentDictionary(x) {
-if (x == 'n'){
+function CreatePeriodicElementDictionary(x) {
+if (x == 'chars'){
 	var elements = new Array();
 	elements['H'] = 1;elements['He'] = 2;elements['Li'] = 3;elements['Be'] = 4;elements['B'] = 5;elements['C'] = 6;
 	elements['N'] = 7;elements['O'] = 8;elements['F'] = 9;elements['Ne'] = 10;elements['Na'] = 11;elements['Mg'] = 12;
@@ -26,7 +26,7 @@ if (x == 'n'){
 	elements['Mt'] = 109;elements['Ds'] = 110;elements['Rg'] = 111;elements['Cn'] = 112;elements['Uut'] = 113;elements['Fl'] = 114;
 	return elements
 }
-else if (x == 'm') {
+else if (x == 'numbers') {
 	var elementsN = new Array();
 	elementsN[1] = 'H';elementsN[2] = 'He';elementsN[3] = 'Li';elementsN[4] = 'Be';elementsN[5] = 'B';elementsN[6] = 'C';
 	elementsN[7] = 'N';elementsN[8] = 'O';elementsN[9] = 'F';elementsN[10] = 'Ne';elementsN[11] = 'Na';elementsN[12] = 'Mg';
@@ -49,59 +49,65 @@ else if (x == 'm') {
 	elementsN[109] = 'Mt';elementsN[110] = 'Ds';elementsN[111] = 'Rg';elementsN[112] = 'Cn';elementsN[113] = 'Uut';elementsN[114] = 'Fl';
 	return elementsN
 }
-else {
+else if(x=='names'){
 	var elementsMemes = new Array();
-	elements['H'] = "Hydrogen";elements['He'] = "Heilum";elements['Li'] = "Lithium";elements['Be'] = "Beryllium";elements['B'] = "Boron";elements['C'] = "Carbon";
-	elements['N'] = "Nitrogen";elements['O'] = "Oxygen";elements['F'] = "Fluorine";elements['Ne'] = "Neon";elements['Na'] = "Sodium";elements['Mg'] = "Magnesium";
-	elements['Al'] = "Aluminium";elements['Si'] = "Silicon";elements['P'] = "Phosphorus";elements['S'] = "Sulfur";elements['Cl'] = "Chlorine";elements['Ar'] = "Argon";
-	elements['K'] = "Potassium";elements['Ca'] = "Calcium";elements['Sc'] = "Scandium";elements['Ti'] = "Titanium";elements['V'] = "Vanadium";elements['Cr'] = "Chromium";
-	elements['Mn'] = "Manganese";elements['Fe'] = "Iron";elements['Co'] = "Cobalt";elements['Ni'] = "Nickel";elements['Cu'] = "Copper";elements['Zn'] = "Zinc";
-	elements['Ga'] = "Gallium";elements['Ge'] = "Germanium";elements['As'] = "Arsenic";elements['Se'] = "Selenium";elements['Br'] = "Bromine";elements['Kr'] = "Krypton";
-	elements['Rb'] = "Rubidium";elements['Sr'] = "Strontium";elements['Y'] = "Yttrium";elements['Zr'] = "Zirconium";elements['Nb'] = "Niobium";elements['Mo'] = "Molybdenum";
-	elements['Tc'] = "Technetium";elements['Ru'] = "Ruthenium";elements['Rh'] = "Rhodium";elements['Pd'] = "Palladium";elements['Ag'] = "Silver";elements['Cd'] = "Cadmium";
-	elements['In'] = "Indium";elements['Sn'] = "Tin";elements['Sb'] = "Antimony";elements['Te'] = "Tellurium";elements['I'] = "Iodine";elements['Xe'] = "Xenon";
-	elements['Cs'] = "Caesium";elements['Ba'] = "Barium";elements['La'] = "Lanthanum";elements['Ce'] = "Cerium";elements['Pr'] = "Praseodymium";elements['Nd'] = "Neodymium";
-	elements['Pm'] = "Promethium";elements['Sm'] = "Samarium";elements['Eu'] = "Europium";elements['Gd'] = "Gadolinium";elements['Tb'] = "Terbium";elements['Dy'] = ;"Dysprosium"
-	elements['Ho'] = "Holmium";elements['Er'] = "Erbium";elements['Tm'] = "Thulium";elements['Yb'] = "Ytterbium";elements['Lu'] = "Lutetium";elements['Hf'] = "Hafnium";
-	elements['Ta'] = "Tantalum";elements['W'] = "Tungsten";elements['Re'] = "Rhenium";elements['Os'] = "Osmium";elements['Ir'] = "Irdium";elements['Pt'] = "Platinum";
-	elements['Au'] = "Gold";elements['Hg'] = "Mercury";elements['Tl'] = "Thallium";elements['Pb'] = "Lead";elements['Bi'] = "Bismuth";elements['Po'] = "Polonium";
-	elements['At'] = "Astatine";elements['Rn'] = "Radon";elements['Fr'] = "Francium";elements['Ra'] = "Radium";elements['Ac'] = "Actinium";elements['Th'] = "Thorium";
-	elements['Pa'] = "Protactinium";elements['U'] = "Uranium";elements['Np'] = "Neptunium";elements['Pu'] = "Plutonium";elements['Am'] = "Americium";elements['Cm'] = "Curium";
-	elements['Bk'] = "Berkelium";elements['Cf'] = "Californium";elements['Es'] = "Einsteinium";elements['Fm'] = "Fermium";elements['Md'] = "Mendelevium";elements['No'] = "Nobelium";
-	elements['Lr'] = "Lawrencium";elements['Rf'] = "Rutherfordium";elements['Db'] = "Dubnium";elements['Sg'] = "Seaborgium";elements['Bh'] = "Bohrium";elements['Hs'] = "Hassium";
-	elements['Mt'] = "Meitnerium";elements['Ds'] = "Darmstadtium";elements['Rg'] = "Roentgenium";elements['Cn'] = "Copernicium";elements['Uut'] = "Ununtrium";elements['Fl'] = "Flerovium";
-	return elements
+	elementsMemes['H'] = "Hydrogen";elementsMemes['He'] = "Heilum";elementsMemes['Li'] = "Lithium";elementsMemes['Be'] = "Beryllium";elementsMemes['B'] = "Boron";elementsMemes['C'] = "Carbon";
+	elementsMemes['N'] = "Nitrogen";elementsMemes['O'] = "Oxygen";elementsMemes['F'] = "Fluorine";elementsMemes['Ne'] = "Neon";elementsMemes['Na'] = "Sodium";elementsMemes['Mg'] = "Magnesium";
+	elementsMemes['Al'] = "Aluminium";elementsMemes['Si'] = "Silicon";elementsMemes['P'] = "Phosphorus";elementsMemes['S'] = "Sulfur";elementsMemes['Cl'] = "Chlorine";elementsMemes['Ar'] = "Argon";
+	elementsMemes['K'] = "Potassium";elementsMemes['Ca'] = "Calcium";elementsMemes['Sc'] = "Scandium";elementsMemes['Ti'] = "Titanium";elementsMemes['V'] = "Vanadium";elementsMemes['Cr'] = "Chromium";
+	elementsMemes['Mn'] = "Manganese";elementsMemes['Fe'] = "Iron";elementsMemes['Co'] = "Cobalt";elementsMemes['Ni'] = "Nickel";elementsMemes['Cu'] = "Copper";elementsMemes['Zn'] = "Zinc";
+	elementsMemes['Ga'] = "Gallium";elementsMemes['Ge'] = "Germanium";elementsMemes['As'] = "Arsenic";elementsMemes['Se'] = "Selenium";elementsMemes['Br'] = "Bromine";elementsMemes['Kr'] = "Krypton";
+	elementsMemes['Rb'] = "Rubidium";elementsMemes['Sr'] = "Strontium";elementsMemes['Y'] = "Yttrium";elementsMemes['Zr'] = "Zirconium";elementsMemes['Nb'] = "Niobium";elementsMemes['Mo'] = "Molybdenum";
+	elementsMemes['Tc'] = "Technetium";elementsMemes['Ru'] = "Ruthenium";elementsMemes['Rh'] = "Rhodium";elementsMemes['Pd'] = "Palladium";elementsMemes['Ag'] = "Silver";elementsMemes['Cd'] = "Cadmium";
+	elementsMemes['In'] = "Indium";elementsMemes['Sn'] = "Tin";elementsMemes['Sb'] = "Antimony";elementsMemes['Te'] = "Tellurium";elementsMemes['I'] = "Iodine";elementsMemes['Xe'] = "Xenon";
+	elementsMemes['Cs'] = "Caesium";elementsMemes['Ba'] = "Barium";elementsMemes['La'] = "Lanthanum";elementsMemes['Ce'] = "Cerium";elementsMemes['Pr'] = "Praseodymium";elementsMemes['Nd'] = "Neodymium";
+	elementsMemes['Pm'] = "Promethium";elementsMemes['Sm'] = "Samarium";elementsMemes['Eu'] = "Europium";elementsMemes['Gd'] = "Gadolinium";elementsMemes['Tb'] = "Terbium";elementsMemes['Dy'] = "Dysprosium";
+	elementsMemes['Ho'] = "Holmium";elementsMemes['Er'] = "Erbium";elementsMemes['Tm'] = "Thulium";elementsMemes['Yb'] = "Ytterbium";elementsMemes['Lu'] = "Lutetium";elementsMemes['Hf'] = "Hafnium";
+	elementsMemes['Ta'] = "Tantalum";elementsMemes['W'] = "Tungsten";elementsMemes['Re'] = "Rhenium";elementsMemes['Os'] = "Osmium";elementsMemes['Ir'] = "Irdium";elementsMemes['Pt'] = "Platinum";
+	elementsMemes['Au'] = "Gold";elementsMemes['Hg'] = "Mercury";elementsMemes['Tl'] = "Thallium";elementsMemes['Pb'] = "Lead";elementsMemes['Bi'] = "Bismuth";elementsMemes['Po'] = "Polonium";
+	elementsMemes['At'] = "Astatine";elementsMemes['Rn'] = "Radon";elementsMemes['Fr'] = "Francium";elementsMemes['Ra'] = "Radium";elementsMemes['Ac'] = "Actinium";elementsMemes['Th'] = "Thorium";
+	elementsMemes['Pa'] = "Protactinium";elementsMemes['U'] = "Uranium";elementsMemes['Np'] = "Neptunium";elementsMemes['Pu'] = "Plutonium";elementsMemes['Am'] = "Americium";elementsMemes['Cm'] = "Curium";
+	elementsMemes['Bk'] = "Berkelium";elementsMemes['Cf'] = "Californium";elementsMemes['Es'] = "Einsteinium";elementsMemes['Fm'] = "Fermium";elementsMemes['Md'] = "Mendelevium";elementsMemes['No'] = "Nobelium";
+	elementsMemes['Lr'] = "Lawrencium";elementsMemes['Rf'] = "Rutherfordium";elementsMemes['Db'] = "Dubnium";elementsMemes['Sg'] = "Seaborgium";elementsMemes['Bh'] = "Bohrium";elementsMemes['Hs'] = "Hassium";
+	elementsMemes['Mt'] = "Meitnerium";elementsMemes['Ds'] = "Darmstadtium";elementsMemes['Rg'] = "Roentgenium";elementsMemes['Cn'] = "Copernicium";elementsMemes['Uut'] = "Ununtrium";elementsMemes['Fl'] = "Flerovium";
+	return elementsMemes
 	
 }
 	
 }
-function CallRandomElement(x)
+function RandomNumberOnPeriodicTable()
 {
 	var randominterger = Math.floor((Math.random() * 114) + 1);
-	alert(x[randominterger]);
+	alert(randominterger)
+	return randominterger
 }
-CreatePeriodElmentDictionary();
-h = CallRandomElement(CreatePeriodElmentDictionary('m'));
-alert(CreatePeriodElmentDictionary('n')[h]);
+function CallRandomElement(x,y)
+{
+	alert(x[y]);
+	return x[y];
+}
+function CallNameFromRandomElement(u,x,y,z,w)
+{
+	var h = u(x(y),w());
+	alert(x(z)[h]);
+	return x(z)[h];
+}
+CallNameFromRandomElement(CallRandomElement,CreatePeriodicElementDictionary,'numbers','names',RandomNumberOnPeriodicTable);
+
+
 /* Ignore This For Now --->
 <!DOCTYPE html>
 <html>
 <body>
-
 <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
-
 <script>
-
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-
 ctx.beginPath();
-
 ctx.arc(100, 75, 50, 0, 2 * Math.PI);
 ctx.textAlign="center"; 
 ctx.fillText("Hello World",100,75);
-
 ctx.closePath();
 ctx.stroke();
 ctx.clear();
@@ -112,9 +118,7 @@ ctx.fillStyle = "red";
 ctx.fill();
 ctx.closePath();
 ctx.stroke();
-
 </script> 
-
 </body>
 </html>
 */
