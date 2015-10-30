@@ -77,7 +77,7 @@ else if(x=='names'){
 }
 function RandomNumberOnPeriodicTable()
 {
-	var randominterger = Math.floor((Math.random() * 114) + 1);
+	var randominterger = Math.floor((Math.random() * 100) + 14);
 	alert(randominterger)
 	return randominterger
 }
