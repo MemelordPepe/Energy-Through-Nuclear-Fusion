@@ -1,11 +1,13 @@
 body {
-    background-color: #B85C00;
+    background-color: #000000;
     }
 title 1 {
     text-style: bold;
+    text-color: white;
 }
 title 2 {
-    text0style: bold;
+    text-style: bold;
+    text-color: white;
     }
 #img {
     display: block;
