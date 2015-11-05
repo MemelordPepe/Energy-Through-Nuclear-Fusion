@@ -9,13 +9,13 @@ title 2 {
     text-style: bold;
     text-color: white;
     }
-#container {
-    #img {
+    
+ #img {
     display: block;
     height: 500px;
     width: auto;
 }
-}
+
 #1 {
     text-align: center;
 }
