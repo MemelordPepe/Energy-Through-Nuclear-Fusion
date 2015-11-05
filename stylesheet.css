@@ -9,10 +9,12 @@ title 2 {
     text-style: bold;
     text-color: white;
     }
-#img {
+#container {
+    #img {
     display: block;
     height: 500px;
     width: auto;
+}
 }
 #1 {
     text-align: center;
