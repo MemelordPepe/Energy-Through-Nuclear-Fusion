@@ -8,17 +8,13 @@ title 1 {
 title 2 {
     text-style: bold;
     text-color: white;
-    }
-    
- #img {
-    display: block;
-    height: 500px;
-    width: auto;
 }
-
 #1 {
     text-align: center;
 }
 #2 {
     text-align: center;
+}
+#container {
+    text-color: white;
 }
