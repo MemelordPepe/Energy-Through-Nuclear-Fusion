@@ -10,6 +10,11 @@ title 2 {
     text-style: bold;
     text-color: white;
 }
+#container {
+    width: auto;
+    height: auto;
+    background-color: #770000;
+}
 h3.Pepe {
     text-align: center;
     color: #ffffff;
