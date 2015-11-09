@@ -16,7 +16,7 @@ title 2 {
     background-color: #770000;
 }
 #Header{
-    float: up;
+    float: 100%;
     width: 800px;
     height: 100px;
 }
