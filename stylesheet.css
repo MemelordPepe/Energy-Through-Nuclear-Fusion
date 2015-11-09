@@ -15,6 +15,26 @@ title 2 {
     height: auto;
     background-color: #770000;
 }
+#Header{
+    float: up;
+    width: 800px;
+    height: 100px;
+}
+#Navigation {
+    float: left;
+    width: 100px;
+    height: 600px;
+}
+#Body{
+    float: left;
+    width: 700px;
+    height: 600px;
+}
+#Footer {
+    float: down;
+    width: 800px;
+    height: 50px;
+}
 h3.Pepe {
     text-align: center;
     color: #ffffff;
@@ -22,4 +42,16 @@ h3.Pepe {
 p.Dankmeme {
     text-align: center;
     color: #ffffff;
+}
+a:link {
+    color: #FF0000;
+}
+a:visited {
+    color: #00FF00;
+}
+a:hover {
+    color: #FF00FF;
+}
+a:active {
+    color: #0000FF;
 }
