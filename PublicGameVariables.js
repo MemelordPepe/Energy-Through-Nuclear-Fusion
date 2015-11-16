@@ -1,11 +1,9 @@
-/**
- * Code Made by: Jonny
- * On 10/28/15
- */
-function CreatePeriodicElementDictionary(x) {
-if (x == 'chars'){
-	var elements = new Array();
-	elements['H'] = 1;elements['He'] = 2;elements['Li'] = 3;elements['Be'] = 4;elements['B'] = 5;elements['C'] = 6;
+#pragma strict
+public static function CreatePeriodicElementDictionary(x) {
+if (x == "chars"){
+	var elements = new Hashtable();
+	elements['H'] = 1;
+	elements['He'] = 2;elements['Li'] = 3;elements['Be'] = 4;elements['B'] = 5;elements['C'] = 6;
 	elements['N'] = 7;elements['O'] = 8;elements['F'] = 9;elements['Ne'] = 10;elements['Na'] = 11;elements['Mg'] = 12;
 	elements['Al'] = 13;elements['Si'] = 14;elements['P'] = 15;elements['S'] = 16;elements['Cl'] = 17;elements['Ar'] = 18;
 	elements['K'] = 19;elements['Ca'] = 20;elements['Sc'] = 21;elements['Ti'] = 22;elements['V'] = 23;elements['Cr'] = 24;
@@ -24,10 +22,10 @@ if (x == 'chars'){
 	elements['Bk'] = 97;elements['Cf'] = 98;elements['Es'] = 99;elements['Fm'] = 100;elements['Md'] = 101;elements['No'] = 102;
 	elements['Lr'] = 103;elements['Rf'] = 104;elements['Db'] = 105;elements['Sg'] = 106;elements['Bh'] = 107;elements['Hs'] = 108;
 	elements['Mt'] = 109;elements['Ds'] = 110;elements['Rg'] = 111;elements['Cn'] = 112;elements['Uut'] = 113;elements['Fl'] = 114;
-	return elements
+	return elements;
 }
-else if (x == 'numbers') {
-	var elementsN = new Array();
+else if (x == "numbers") {
+	var elementsN = new Hashtable();
 	elementsN[1] = 'H';elementsN[2] = 'He';elementsN[3] = 'Li';elementsN[4] = 'Be';elementsN[5] = 'B';elementsN[6] = 'C';
 	elementsN[7] = 'N';elementsN[8] = 'O';elementsN[9] = 'F';elementsN[10] = 'Ne';elementsN[11] = 'Na';elementsN[12] = 'Mg';
 	elementsN[13] = 'Al';elementsN[14] = 'Si';elementsN[15] = 'P';elementsN[16] = 'S';elementsN[17] = 'Cl';elementsN[18] = 'Ar';
@@ -47,10 +45,10 @@ else if (x == 'numbers') {
 	elementsN[97] = 'Bk';elementsN[98] = 'Cf';elementsN[99] = 'Es';elementsN[100] = 'Fm';elementsN[101] = 'Md';elementsN[102] = 'No';
 	elementsN[103] = 'Lr';elementsN[104] = 'Rf';elementsN[105] = 'Db';elementsN[106] = 'Sg';elementsN[107] = 'Bh';elementsN[108] = 'Hs';
 	elementsN[109] = 'Mt';elementsN[110] = 'Ds';elementsN[111] = 'Rg';elementsN[112] = 'Cn';elementsN[113] = 'Uut';elementsN[114] = 'Fl';
-	return elementsN
+	return elementsN;
 }
-else if(x=='names'){
-	var elementsMemes = new Array();
+else if(x=="names"){
+	var elementsMemes = new Hashtable();
 	elementsMemes['H'] = "Hydrogen";elementsMemes['He'] = "Heilum";elementsMemes['Li'] = "Lithium";elementsMemes['Be'] = "Beryllium";elementsMemes['B'] = "Boron";elementsMemes['C'] = "Carbon";
 	elementsMemes['N'] = "Nitrogen";elementsMemes['O'] = "Oxygen";elementsMemes['F'] = "Fluorine";elementsMemes['Ne'] = "Neon";elementsMemes['Na'] = "Sodium";elementsMemes['Mg'] = "Magnesium";
 	elementsMemes['Al'] = "Aluminium";elementsMemes['Si'] = "Silicon";elementsMemes['P'] = "Phosphorus";elementsMemes['S'] = "Sulfur";elementsMemes['Cl'] = "Chlorine";elementsMemes['Ar'] = "Argon";
@@ -70,55 +68,23 @@ else if(x=='names'){
 	elementsMemes['Bk'] = "Berkelium";elementsMemes['Cf'] = "Californium";elementsMemes['Es'] = "Einsteinium";elementsMemes['Fm'] = "Fermium";elementsMemes['Md'] = "Mendelevium";elementsMemes['No'] = "Nobelium";
 	elementsMemes['Lr'] = "Lawrencium";elementsMemes['Rf'] = "Rutherfordium";elementsMemes['Db'] = "Dubnium";elementsMemes['Sg'] = "Seaborgium";elementsMemes['Bh'] = "Bohrium";elementsMemes['Hs'] = "Hassium";
 	elementsMemes['Mt'] = "Meitnerium";elementsMemes['Ds'] = "Darmstadtium";elementsMemes['Rg'] = "Roentgenium";elementsMemes['Cn'] = "Copernicium";elementsMemes['Uut'] = "Ununtrium";elementsMemes['Fl'] = "Flerovium";
-	return elementsMemes
-	
+	return elementsMemes;
 }
-	
 }
-function RandomNumberOnPeriodicTable()
+public static function RandomNumberOnPeriodicTable()
 {
-	var randominterger = Math.floor((Math.random() * 114) + 1);
-	alert(randominterger)
-	return randominterger
+	var placeholderinteger = Random.Range(1,144);
+	var randominterger = parseInt(placeholderinteger);
+	return randominterger;
 }
-function CallRandomElement(x,y)
+public static function CallRandomElement()
 {
-	alert(x[y]);
-	return x[y];
+	return CreatePeriodicElementDictionary("chars")[RandomNumberOnPeriodicTable()];
 }
-function CallNameFromRandomElement(u,x,y,z,w)
-{
-	var h = u(x(y),w());
-	alert(x(z)[h]);
-	return x(z)[h];
-}
-CallNameFromRandomElement(CallRandomElement,CreatePeriodicElementDictionary,'numbers','names',RandomNumberOnPeriodicTable);
+function Start () {
 
+}
 
-/* Ignore This For Now --->
-<!DOCTYPE html>
-<html>
-<body>
-<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-ctx.textAlign="center"; 
-ctx.fillText("Hello World",100,75);
-ctx.closePath();
-ctx.stroke();
-ctx.clear();
-ctx.beginPath();
-ctx.translate(50,0);
-ctx.arc(100, 75, 50, 0,  2* Math.PI);
-ctx.fillStyle = "red";
-ctx.fill();
-ctx.closePath();
-ctx.stroke();
-</script> 
-</body>
-</html>
-*/
+function Update () {
+
+}
