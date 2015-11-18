@@ -14,8 +14,8 @@ body {
 }
 #Header{
     float: 100%;
-    width: 800px;
-    height: 100px;
+    width: auto;
+    height: 216px;
 }
 #Navigation {
     float: left;
