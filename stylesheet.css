@@ -3,6 +3,7 @@ body {
     background-repeat: repeat-x;
     text-align: center;
     color: #ffffff;
+	font-family:Arial;
     }
 
 #container {
@@ -48,3 +49,6 @@ a:hover {
 a:active {
     color: #0000FF;
 }
+#meme{
+	width:auto;
+	height:500px;
